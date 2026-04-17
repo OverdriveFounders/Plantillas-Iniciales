@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery y take away de pizza napolitana | Santo Impasto</title>
+    <meta name="description" content="Pide pizza napolitana a domicilio o para recoger. Checkout rapido, promos activas y tiempo estimado en tiempo real.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section split">
+        <article>
+          <p class="kicker">Pedidos online</p>
+          <h1>Del horno a tu puerta</h1>
+          <p>Elige delivery o take away, personaliza y finaliza en menos de un minuto.</p>
+          <div class="badges">
+            <span class="badge">Entrega estimada 28-35 min</span>
+            <span class="badge">Take away listo en 15 min</span>
+            <span class="badge good">Pago seguro</span>
+          </div>
+          <a class="btn btn-primary" href="carta.html">Ver carta completa</a>
+        </article>
+        <article class="card">
+          <form class="form-grid" id="order-form">
+            <div>
+              <label for="order-type">Tipo de pedido</label>
+              <select id="order-type">
+                <option>Delivery</option>
+                <option>Take away</option>
+              </select>
+            </div>
+            <div>
+              <label for="order-local">Local</label>
+              <select id="order-local">
+                <option>Chamberí</option>
+                <option>Salamanca</option>
+                <option>La Latina</option>
+              </select>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label for="order-address">Dirección</label>
+              <input id="order-address" placeholder="Calle, número, piso" required>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label for="order-products">¿Qué quieres pedir?</label>
+              <textarea id="order-products" rows="4" placeholder="Ej: 1 Margherita clásica + 1 Trufa in Love + 2 cervezas" required></textarea>
+            </div>
+            <div style="grid-column:1/-1;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;">
+              <button class="btn btn-primary" type="submit">Enviar pedido por WhatsApp</button>
+              <span id="order-feedback" class="small muted"></span>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <section class="section-tight">
+        <h2>Upsells que mejoran cualquier noche</h2>
+        <div class="grid grid-3">
+          <article class="card"><h3>Combo anti lunes</h3><p>Pizza + bebida + tiramisú a precio amable.</p><a class="btn btn-ghost" href="promociones.html">Activar</a></article>
+          <article class="card"><h3>Entrante de cortesía</h3><p>Añade focaccia con stracciatella por solo 3,90€.</p><a class="btn btn-ghost" href="carta.html#entrantes">Añadir</a></article>
+          <article class="card"><h3>Repetir pedido</h3><p>Guarda tu pedido favorito y repite en 1 clic.</p><button class="btn btn-ghost" type="button">Guardar pedido</button></article>
+        </div>
+      </section>
+    </main>
+
+    <div id="ui-shell"></div>
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById('order-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const type     = document.getElementById('order-type').value;
+        const local    = document.getElementById('order-local').value;
+        const address  = document.getElementById('order-address').value.trim();
+        const products = document.getElementById('order-products').value.trim();
+
+        const mensaje =
+          `🍕 *Nuevo pedido — Santo Impasto*\n\n` +
+          `📦 *Tipo:* ${type}\n` +
+          `📍 *Local:* ${local}\n` +
+          `🏠 *Dirección:* ${address}\n\n` +
+          `🛒 *Pedido:*\n${products}\n\n` +
+          `---\nPedido enviado desde santoimpasto.es`;
+
+        const url = 'https://wa.me/34601516165?text=' + encodeURIComponent(mensaje);
+        window.open(url, '_blank');
+
+        document.getElementById('order-feedback').textContent = 'Abriendo WhatsApp…';
+        setTimeout(() => {
+          document.getElementById('order-feedback').textContent = '';
+          this.reset();
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

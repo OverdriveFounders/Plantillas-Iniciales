@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto pizzeria italiana | Santo Impasto</title>
+    <meta name="description" content="Contacta con Santo Impasto para reservas, pedidos, incidencias o eventos. Respuesta rapida por formulario y WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section split">
+        <article>
+          <p class="kicker">Contacto</p>
+          <h1>Hablemos, sin vueltas</h1>
+          <p>Si tienes una duda, una alergia o una celebracion en mente, te respondemos rapido.</p>
+          <div class="card">
+            <p><strong>Telefono</strong> +34 910 555 870</p>
+            <p><strong>Email</strong> ciao@santoimpasto.es</p>
+            <p><strong>WhatsApp</strong> respuesta en horario de servicio</p>
+            <a class="btn btn-secondary" href="https://wa.me/34910555870" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+        </article>
+        <article class="card">
+          <h2>Escribenos</h2>
+          <form class="form-grid" data-ui="async">
+            <div>
+              <label for="contact-name">Nombre</label>
+              <input id="contact-name" required>
+            </div>
+            <div>
+              <label for="contact-email">Email</label>
+              <input id="contact-email" type="email" required>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label for="contact-topic">Asunto</label>
+              <select id="contact-topic">
+                <option>Reserva</option>
+                <option>Pedido</option>
+                <option>Evento de grupo</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label for="contact-message">Mensaje</label>
+              <textarea id="contact-message" rows="4" required></textarea>
+            </div>
+            <div style="grid-column:1/-1;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;">
+              <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+              <span class="small muted" data-role="feedback"></span>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <div id="ui-shell"></div>
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+

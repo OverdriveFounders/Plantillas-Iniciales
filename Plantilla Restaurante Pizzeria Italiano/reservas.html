@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar mesa en Madrid | Santo Impasto</title>
+    <meta name="description" content="Reserva tu mesa en Santo Impasto en menos de un minuto. Elige local, fecha, hora y comensales.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section split">
+        <article>
+          <p class="kicker">Reservas</p>
+          <h1>Tu mesa te espera caliente</h1>
+          <p>
+            Reserva online en 3 pasos. Te confirmamos al instante
+            y te enviamos recordatorio por WhatsApp.
+          </p>
+          <ul>
+            <li>Confirmacion inmediata</li>
+            <li>Cambios sin llamada</li>
+            <li>Gestion de grupos y eventos</li>
+          </ul>
+        </article>
+        <article class="card">
+          <form class="form-grid" data-ui="async">
+            <div>
+              <label for="res-local">Local</label>
+              <select id="res-local" required>
+                <option value="">Selecciona local</option>
+                <option>Chamberi</option>
+                <option>Salamanca</option>
+                <option>La Latina</option>
+              </select>
+            </div>
+            <div>
+              <label for="res-date">Fecha</label>
+              <input id="res-date" type="date" required>
+            </div>
+            <div>
+              <label for="res-time">Hora</label>
+              <select id="res-time" required>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>21:00</option>
+                <option>21:30</option>
+                <option>22:00</option>
+              </select>
+            </div>
+            <div>
+              <label for="res-guests">Comensales</label>
+              <input id="res-guests" type="number" min="1" max="16" placeholder="2" required>
+            </div>
+            <div style="grid-column:1/-1;">
+              <label for="res-notes">Notas</label>
+              <textarea id="res-notes" rows="3" placeholder="Alergias, cumpleanos, trona..."></textarea>
+            </div>
+            <div style="grid-column:1/-1;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;">
+              <button class="btn btn-primary" type="submit">Confirmar reserva</button>
+              <a class="btn btn-secondary" href="https://wa.me/34910555870" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+              <span data-role="feedback" class="small muted"></span>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <section class="section-tight">
+        <div class="grid grid-3">
+          <article class="card"><h3>Politica de cancelacion</h3><p>Modifica o cancela hasta 2 horas antes sin coste.</p></article>
+          <article class="card"><h3>Grupos</h3><p>Para 10+ personas te asesoramos menu y tiempos.</p></article>
+          <article class="card"><h3>Eventos privados</h3><p>Afterworks, cumples y cenas de equipo con menu cerrado.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <div id="ui-shell"></div>
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+

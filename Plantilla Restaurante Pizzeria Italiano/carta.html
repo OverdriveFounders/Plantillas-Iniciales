@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de pizzas napolitanas y gourmet | Santo Impasto</title>
+    <meta name="description" content="Carta completa: favoritas, clasicas, gourmet, vegetarianas, veganas, sin gluten, postres, vinos y cocktails. Buon appetito.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section">
+        <p class="kicker">Carta al completo</p>
+        <h1>Sabores italianos, ritmo de barrio</h1>
+        <p>
+          Lee rapido, elige facil y pide sin perder tiempo. Si prefieres mesa,
+          reserva en dos clics.
+        </p>
+        <div style="display:flex;gap:.65rem;flex-wrap:wrap; margin-top:.7rem;">
+          <a href="pedidos.html" class="btn btn-primary">Pedir ahora</a>
+          <button class="btn btn-secondary" data-open-reserva="true">Reservar mesa</button>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div id="menu-toc" class="table-of-contents" aria-label="Categorias de carta"></div>
+        <div id="menu-root"></div>
+      </section>
+
+      <section class="section-tight">
+        <div class="notice">
+          Consulta al equipo cualquier alergeno. Versiones sin gluten disponibles en
+          categorias marcadas. No gluten, no drama.
+        </div>
+      </section>
+    </main>
+
+    <div id="ui-shell"></div>
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu-data.js"></script>
+    <script src="assets/js/carta.js"></script>
+  </body>
+</html>
+

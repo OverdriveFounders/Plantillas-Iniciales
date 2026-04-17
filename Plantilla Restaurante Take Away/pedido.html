@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedir comida online en Alicante | Sabrosito Take Away</title>
+  <meta name="description" content="Haz tu pedido online en Sabrosito Take Away Alicante. Reserva recogida, solicita delivery o confirma por WhatsApp en menos de 1 minuto.">
+  <link rel="canonical" href="https://www.sabrositotakeaway.es/pedido.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container topbar">
+      <a href="index.html" class="logo">Sabrosito <span>Take Away</span></a>
+      <div class="nav-wrap">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="main-nav">
+          <a href="index.html">Inicio</a>
+          <a href="menu.html">Carta</a>
+          <a href="pedido.html">Pedir</a>
+          <a href="promociones.html">Promos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="contact-shortcuts">
+          <a class="btn btn-outline" href="tel:+34965000111">Llamar</a>
+          <a class="btn btn-primary" href="https://wa.me/34655000111" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="badge">Pedido en menos de 1 minuto</span>
+        <h1>Pedir comida online en Alicante</h1>
+        <p style="margin-top: 12px; max-width: 62ch;">Elige tu menu, indica recogida o delivery y confirma. Rapido, claro y sin pasos innecesarios.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <article class="info-box reveal">
+          <p class="kicker">Canal directo</p>
+          <h2>Pedido por WhatsApp o telefono</h2>
+          <p style="margin-top: 10px;">Si prefieres hablar con nosotros, te confirmamos tiempo y disponibilidad al momento.</p>
+          <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
+            <a class="btn btn-primary" href="https://wa.me/34655000111" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+34965000111">Llamar ahora</a>
+          </div>
+          <ul style="margin-top: 16px; display: grid; gap: 8px; color: var(--secondary);">
+            <li>Recogida express en 12-18 minutos.</li>
+            <li>Delivery en Alicante centro y zonas cercanas.</li>
+            <li>Pago con tarjeta, efectivo o Bizum.</li>
+          </ul>
+        </article>
+        <article class="info-box reveal">
+          <p class="kicker">Formulario base</p>
+          <h2>Reserva recogida desde la web</h2>
+          <form aria-label="Formulario de pedido" style="display: grid; gap: 10px; margin-top: 12px;">
+            <label>Nombre
+              <input type="text" name="nombre" placeholder="Tu nombre" required style="width: 100%; margin-top: 4px; padding: 12px; border-radius: 10px; border: 1px solid var(--border);">
+            </label>
+            <label>Telefono
+              <input type="tel" name="telefono" placeholder="600 000 000" required style="width: 100%; margin-top: 4px; padding: 12px; border-radius: 10px; border: 1px solid var(--border);">
+            </label>
+            <label>Tipo de pedido
+              <select name="tipo" style="width: 100%; margin-top: 4px; padding: 12px; border-radius: 10px; border: 1px solid var(--border);">
+                <option>Recogida en local</option>
+                <option>Delivery</option>
+              </select>
+            </label>
+            <label>Que quieres pedir?
+              <textarea name="detalle" rows="4" placeholder="Ejemplo: 2 Burger Fuego, 1 patatas loaded" style="width: 100%; margin-top: 4px; padding: 12px; border-radius: 10px; border: 1px solid var(--border);"></textarea>
+            </label>
+            <button type="button" class="btn btn-primary">Enviar solicitud</button>
+            <small>Este formulario es base visual. Conecta aqui tu sistema real de pedidos.</small>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="cta-final reveal">
+          <h2>Tu pedido sale ya</h2>
+          <p>Si tienes hambre ahora, pulsa y te atendemos al instante.</p>
+          <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <a class="btn btn-primary" href="https://wa.me/34655000111" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            <a class="btn btn-outline" href="menu.html">Ver menu</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Sabrosito Take Away</strong> | Calle del Sabor 25, Alicante | +34 965 000 111</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/34655000111" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">WA</a>
+  <div class="mobile-cta">
+    <a class="btn btn-dark" href="tel:+34965000111">Llamar</a>
+    <a class="btn btn-primary" href="https://wa.me/34655000111" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

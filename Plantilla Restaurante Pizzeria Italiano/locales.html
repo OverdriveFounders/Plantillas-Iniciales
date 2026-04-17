@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria italiana cerca de ti en Madrid | Locales Santo Impasto</title>
+    <meta name="description" content="Encuentra tu local Santo Impasto en Chamberi, Salamanca o La Latina. Horarios, servicios, mapa y reserva por barrio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"ItemList",
+        "itemListElement":[
+          {"@type":"Restaurant","name":"Santo Impasto Chamberi","address":{"@type":"PostalAddress","streetAddress":"Calle Apodaca 11","addressLocality":"Madrid"}},
+          {"@type":"Restaurant","name":"Santo Impasto Salamanca","address":{"@type":"PostalAddress","streetAddress":"Calle Hermosilla 84","addressLocality":"Madrid"}},
+          {"@type":"Restaurant","name":"Santo Impasto La Latina","address":{"@type":"PostalAddress","streetAddress":"Cava Baja 22","addressLocality":"Madrid"}}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section">
+        <p class="kicker">Nuestros locales</p>
+        <h1>Elige barrio, nosotros ponemos el fuego</h1>
+        <p>Busca por zona y reserva en el local que mejor te venga.</p>
+      </section>
+
+      <section class="section-tight">
+        <div class="form-inline" style="margin-bottom:1rem;">
+          <div>
+            <label for="search-zone">Filtrar por barrio</label>
+            <input id="search-zone" placeholder="Ej. Chamberi o Centro">
+          </div>
+          <button class="btn btn-secondary" type="button">Buscar</button>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="local-card">
+            <h2>Chamberi</h2>
+            <p>Calle Apodaca 11, 28004 Madrid</p>
+            <div class="local-meta">
+              <span class="badge">Terraza</span>
+              <span class="badge">Take away</span>
+              <span class="badge">Accesible</span>
+            </div>
+            <p class="small">L-D 13:00-16:30 | 20:00-00:00</p>
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener">Como llegar</a>
+              <button class="btn btn-secondary" data-open-reserva="true">Reservar aqui</button>
+            </div>
+          </article>
+
+          <article class="local-card">
+            <h2>Salamanca</h2>
+            <p>Calle Hermosilla 84, 28001 Madrid</p>
+            <div class="local-meta">
+              <span class="badge">Afterwork</span>
+              <span class="badge">Delivery</span>
+              <span class="badge">Parking cercano</span>
+            </div>
+            <p class="small">L-D 13:00-16:30 | 20:00-00:30</p>
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener">Como llegar</a>
+              <button class="btn btn-secondary" data-open-reserva="true">Reservar aqui</button>
+            </div>
+          </article>
+
+          <article class="local-card">
+            <h2>La Latina</h2>
+            <p>Cava Baja 22, 28005 Madrid</p>
+            <div class="local-meta">
+              <span class="badge">Cocktails</span>
+              <span class="badge">Grupos</span>
+              <span class="badge">Pet friendly</span>
+            </div>
+            <p class="small">L-D 13:00-16:30 | 20:00-01:00</p>
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+              <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener">Como llegar</a>
+              <button class="btn btn-secondary" data-open-reserva="true">Reservar aqui</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="notice">
+          Reparto activo en Centro, Chamberi, Salamanca, Retiro y Arganzuela.
+          Tiempo medio delivery: 28-35 minutos.
+        </div>
+      </section>
+    </main>
+
+    <div id="ui-shell"></div>
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
