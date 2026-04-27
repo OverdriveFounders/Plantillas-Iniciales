@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reserva tu mesa en CiaoCiao da' Vito Pizzería. Selecciona local, fecha, hora y número de comensales. Confirmación inmediata." />
+  <title>Reservar Mesa | CiaoCiao da' Vito Pizzería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header id="navbar" role="banner"></header>
+  <div id="ticker" class="ticker-wrap"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="label-caps">Sin esperas</span>
+        <h1 class="display-title">Reserva tu <em style="font-style:italic;color:var(--color-accent);">mesa</em></h1>
+        <p>Confirmación inmediata · Cancela gratis hasta 2h antes</p>
+      </div>
+    </div>
+
+    <section class="section reservas-section">
+      <div class="container">
+        <div class="reservas-layout">
+
+          <!-- Form -->
+          <div class="reservas-form-wrap reveal-left">
+            <div class="glass-card reservas-form-card">
+              <h2 class="reservas-form-title">Datos de la reserva</h2>
+
+              <form id="reserva-form" class="reserva-form" novalidate>
+
+                <!-- Local -->
+                <div class="form-group" id="group-local">
+                  <label class="form-label" for="local">Local</label>
+                  <div class="form-select-wrap">
+                    <select class="form-select" id="local" name="local" required>
+                      <option value="" disabled selected>Selecciona el restaurante</option>
+                      <option value="alicante">Alicante Centro — Calle Mayor 14</option>
+                      <option value="playa">Playa San Juan — Av. de las Naciones 8</option>
+                    </select>
+                    <svg class="select-arrow" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Fecha + Hora -->
+                <div class="form-row">
+                  <div class="form-group" id="group-fecha">
+                    <label class="form-label" for="fecha">Fecha</label>
+                    <input class="form-input" type="date" id="fecha" name="fecha" required />
+                  </div>
+                  <div class="form-group" id="group-hora">
+                    <label class="form-label" for="hora">Hora</label>
+                    <div class="form-select-wrap">
+                      <select class="form-select" id="hora" name="hora" required>
+                        <option value="" disabled selected>Hora</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                      </select>
+                      <svg class="select-arrow" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Comensales -->
+                <div class="form-group" id="group-comensales">
+                  <label class="form-label">Número de personas</label>
+                  <div class="personas-picker">
+                    <button type="button" class="personas-btn" id="personas-minus" aria-label="Reducir">−</button>
+                    <span class="personas-count" id="personas-count">2</span>
+                    <button type="button" class="personas-btn" id="personas-plus" aria-label="Aumentar">+</button>
+                    <input type="hidden" name="personas" id="personas-hidden" value="2" />
+                  </div>
+                  <p class="form-hint">Para grupos &gt;10 personas llámanos al <a href="tel:+34965123456">965 12 34 56</a></p>
+                </div>
+
+                <hr class="form-divider" />
+
+                <!-- Datos personales -->
+                <div class="form-row">
+                  <div class="form-group" id="group-nombre">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name"/>
+                  </div>
+                  <div class="form-group" id="group-apellido">
+                    <label class="form-label" for="apellido">Apellido</label>
+                    <input class="form-input" type="text" id="apellido" name="apellido" placeholder="Tu apellido" required autocomplete="family-name"/>
+                  </div>
+                </div>
+
+                <div class="form-group" id="group-email">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email"/>
+                </div>
+
+                <div class="form-group" id="group-telefono">
+                  <label class="form-label" for="telefono">Teléfono</label>
+                  <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+34 6XX XXX XXX" required autocomplete="tel"/>
+                </div>
+
+                <div class="form-group" id="group-notas">
+                  <label class="form-label" for="notas">Notas especiales <span class="form-label-opt">(opcional)</span></label>
+                  <textarea class="form-textarea" id="notas" name="notas" rows="3" placeholder="Alergias, celebración especial, preferencias de mesa..."></textarea>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" id="acepto-politica" name="acepto" required />
+                  <label for="acepto-politica">Acepto la <a href="privacidad.html" target="_blank">política de privacidad</a></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit" id="btn-reserva-submit">
+                  Confirmar reserva
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+
+              </form>
+
+              <!-- Éxito -->
+              <div class="form-success" id="form-success" hidden>
+                <div class="success-icon">✅</div>
+                <h3>¡Reserva confirmada!</h3>
+                <p>Te hemos enviado un email de confirmación. Te esperamos.</p>
+                <a href="index.html" class="btn btn-outline" style="margin-top:20px;">Volver al inicio</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar info -->
+          <aside class="reservas-sidebar reveal-right">
+            <div class="glass-card sidebar-card">
+              <h3>¿Cuándo estamos?</h3>
+              <div class="sidebar-hours">
+                <div class="sidebar-hour-row closed">
+                  <span>Lunes</span><span>Cerrado</span>
+                </div>
+                <div class="sidebar-hour-row">
+                  <span>Mar – Jue</span><span>13–16h · 20–24h</span>
+                </div>
+                <div class="sidebar-hour-row">
+                  <span>Viernes</span><span>13–16h · 20–01h</span>
+                </div>
+                <div class="sidebar-hour-row">
+                  <span>Sábado</span><span>13–16h · 20–01h</span>
+                </div>
+                <div class="sidebar-hour-row">
+                  <span>Domingo</span><span>13–16h · 20–23h</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card sidebar-card sidebar-img-card">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=75&auto=format&fit=crop" alt="Interior del restaurante" loading="lazy" />
+              <div class="sidebar-img-overlay">
+                <p>¿Prefieres llamar?</p>
+                <a href="tel:+34965123456" class="btn btn-gold" id="btn-reservas-tel">📞 965 12 34 56</a>
+              </div>
+            </div>
+            <div class="glass-card sidebar-card sidebar-policy">
+              <h4>Política de reservas</h4>
+              <ul>
+                <li>✅ Confirmación inmediata por email</li>
+                <li>✅ Cancelación gratuita hasta 2h antes</li>
+                <li>✅ Mesa reservada durante 15 min</li>
+                <li>✅ Grupos hasta 10 personas online</li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" role="contentinfo"></footer>
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/footer.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/reservas.js" defer></script>
+</body>
+</html>

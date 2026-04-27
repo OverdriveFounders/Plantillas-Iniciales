@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nuestra carta de pizzas artesanales, bebidas y postres. Masa madre, horno de leña, ingredientes mediterráneos. CiaoCiao da' Vito Pizzería." />
+  <title>Carta | CiaoCiao da' Vito Pizzería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header id="navbar" role="banner"></header>
+  <div id="ticker" class="ticker-wrap"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="label-caps">Nuestra carta</span>
+        <h1 class="display-title">La carta de CiaoCiao <em style="font-style:italic;color:var(--color-accent);">da' Vito</em></h1>
+        <p>Masa madre · Horno de leña · Ingredientes de temporada</p>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="menu-tabs-wrap">
+      <div class="container">
+        <div class="menu-tabs" role="tablist" aria-label="Categorías de la carta">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all" id="tab-all">Todo</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="clasicas" id="tab-clasicas">Clásicas</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="especiales" id="tab-especiales">Especiales</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="blancas" id="tab-blancas">Blancas</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="veganas" id="tab-veganas">Veganas</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="bebidas" id="tab-bebidas">Bebidas</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="postres" id="tab-postres">Postres</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Grid -->
+    <section class="section menu-section">
+      <div class="container">
+
+        <!-- ── Clásicas ── -->
+        <div class="menu-category" id="cat-clasicas">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Pizzas</span>
+            Clásicas Napolitanas
+          </h2>
+          <div class="menu-grid">
+
+            <article class="menu-card card reveal delay-1" data-category="clasicas" id="pizza-margherita">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=75&auto=format&fit=crop" alt="Pizza Margherita DOP" loading="lazy"/>
+                <span class="menu-tag">⭐ Más popular</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Margherita D.O.P.</h3>
+                  <span class="menu-price">12,50€</span>
+                </div>
+                <p class="menu-desc">Tomate San Marzano D.O.P., mozzarella di bufala, albahaca fresca, aceite de oliva virgen extra.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegetariana</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="clasicas" id="pizza-marinara">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=75&auto=format&fit=crop" alt="Pizza Marinara" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Marinara</h3>
+                  <span class="menu-price">10,50€</span>
+                </div>
+                <p class="menu-desc">Tomate San Marzano, ajo, orégano, AOVE. La pizza más antigua de Nápoles.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegana</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-3" data-category="clasicas" id="pizza-quattro-stagioni">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&q=75&auto=format&fit=crop" alt="Pizza Quattro Stagioni" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Quattro Stagioni</h3>
+                  <span class="menu-price">15,00€</span>
+                </div>
+                <p class="menu-desc">Mozzarella, jamón york, champiñones, alcachofas, aceitunas. Cuatro sabores en una.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🥩 Con carne</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-4" data-category="clasicas" id="pizza-diavola">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=75&auto=format&fit=crop" alt="Pizza Diavola" loading="lazy"/>
+                <span class="menu-tag menu-tag-hot">🌶 Picante</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Diavola Piccante</h3>
+                  <span class="menu-price">14,50€</span>
+                </div>
+                <p class="menu-desc">Tomate, fiordilatte, salame piccante DOP, aceitunas negras, guindilla calabresa.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🥩 Con carne</span>
+                  <span class="menu-allergen">🌶 Picante</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-1" data-category="clasicas" id="pizza-prosciutto">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&q=75&auto=format&fit=crop" alt="Pizza Prosciutto e Funghi" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Prosciutto e Funghi</h3>
+                  <span class="menu-price">14,00€</span>
+                </div>
+                <p class="menu-desc">Tomate, mozzarella, jamón cocido artesanal, champiñones laminados, parmesano rallado.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🥩 Con carne</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="clasicas" id="pizza-capricciosa">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=500&q=75&auto=format&fit=crop" alt="Pizza Capricciosa" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Capricciosa</h3>
+                  <span class="menu-price">15,50€</span>
+                </div>
+                <p class="menu-desc">Tomate, mozzarella, jamón, champiñones, alcachofas, pepperoni, aceitunas verdes.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🥩 Con carne</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Especiales ── -->
+        <div class="menu-category" id="cat-especiales">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Del chef</span>
+            Pizzas Especiales
+          </h2>
+          <div class="menu-grid">
+
+            <article class="menu-card card reveal delay-1" data-category="especiales" id="pizza-trufa">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&q=75&auto=format&fit=crop" alt="Pizza Trufa Negra" loading="lazy"/>
+                <span class="menu-tag menu-tag-gold">👨‍🍳 Chef's pick</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Trufa Negra &amp; Porcini</h3>
+                  <span class="menu-price">18,00€</span>
+                </div>
+                <p class="menu-desc">Base blanca, mozzarella, setas porcini, crema de trufa negra, parmesano 24 meses, rúcula.</p>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="especiales" id="pizza-burrata">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&q=75&auto=format&fit=crop" alt="Pizza Burrata" loading="lazy"/>
+                <span class="menu-tag">🏆 Premiada</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Burrata &amp; Prosciutto</h3>
+                  <span class="menu-price">17,50€</span>
+                </div>
+                <p class="menu-desc">Tomate cherry confitado, burrata fresca, prosciutto crudo DOP, albahaca, vinagreta de módena.</p>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-3" data-category="especiales" id="pizza-nduja">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=500&q=75&auto=format&fit=crop" alt="Pizza Nduja" loading="lazy"/>
+                <span class="menu-tag menu-tag-hot">🌶 Muy picante</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Nduja Calabrese</h3>
+                  <span class="menu-price">16,00€</span>
+                </div>
+                <p class="menu-desc">Tomate, fiordilatte, nduja cremosa de Calabria, honey de chile, cebolla caramelizada.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🥩 Con carne</span>
+                  <span class="menu-allergen">🌶 Muy picante</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Blancas ── -->
+        <div class="menu-category" id="cat-blancas">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Sin tomate</span>
+            Pizzas Blancas
+          </h2>
+          <div class="menu-grid">
+
+            <article class="menu-card card reveal delay-1" data-category="blancas" id="pizza-boscaiola">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=500&q=75&auto=format&fit=crop" alt="Pizza Boscaiola" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Boscaiola</h3>
+                  <span class="menu-price">15,50€</span>
+                </div>
+                <p class="menu-desc">Crema de setas, mozzarella, setas mixtas salteadas, panceta, trufa blanca, tomillo fresco.</p>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="blancas veganas" id="pizza-patata">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=75&auto=format&fit=crop" alt="Pizza Patata Rosmarino" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Patata &amp; Rosmarino</h3>
+                  <span class="menu-price">13,00€</span>
+                </div>
+                <p class="menu-desc">Base de AOVE, patata laminada fina, romero fresco, ajo, flor de sal. Minimalismo italiano.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegana</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Veganas ── -->
+        <div class="menu-category" id="cat-veganas">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Plant-based</span>
+            Opciones Veganas
+          </h2>
+          <div class="menu-grid">
+
+            <article class="menu-card card reveal delay-1" data-category="veganas" id="pizza-orto">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=75&auto=format&fit=crop" alt="Pizza dell'Orto" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Pizza dell'Orto</h3>
+                  <span class="menu-price">13,50€</span>
+                </div>
+                <p class="menu-desc">Tomate, queso vegano, pimiento asado, berenjena, calabacín, tomate cherry, albahaca.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegana</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="veganas" id="pizza-marinara-2">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&q=75&auto=format&fit=crop" alt="Marinara Classica" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Marinara Classica</h3>
+                  <span class="menu-price">10,50€</span>
+                </div>
+                <p class="menu-desc">La original napolitana: tomate San Marzano, ajo, orégano, AOVE. Sin lactosa, sin gluten★.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegana</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Bebidas ── -->
+        <div class="menu-category" id="cat-bebidas">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Bebidas</span>
+            Para acompañar
+          </h2>
+          <div class="drinks-grid">
+            <div class="drinks-col reveal delay-1">
+              <h3 class="drinks-subcategory">Vinos</h3>
+              <div class="drink-item" id="bebida-vino-tinto">
+                <span class="drink-name">Chianti Classico Riserva</span>
+                <span class="drink-price">4,50€ / 18,00€</span>
+              </div>
+              <div class="drink-item" id="bebida-vino-blanco">
+                <span class="drink-name">Pinot Grigio DOC</span>
+                <span class="drink-price">4,00€ / 16,00€</span>
+              </div>
+              <div class="drink-item" id="bebida-prosecco">
+                <span class="drink-name">Prosecco Valdobbiadene</span>
+                <span class="drink-price">5,00€ / 22,00€</span>
+              </div>
+              <div class="drink-item" id="bebida-vino-rose">
+                <span class="drink-name">Rosato Siciliano</span>
+                <span class="drink-price">4,00€ / 16,00€</span>
+              </div>
+            </div>
+            <div class="drinks-col reveal delay-2">
+              <h3 class="drinks-subcategory">Cervezas &amp; Refrescos</h3>
+              <div class="drink-item" id="bebida-moretti">
+                <span class="drink-name">Birra Moretti</span>
+                <span class="drink-price">3,50€</span>
+              </div>
+              <div class="drink-item" id="bebida-peroni">
+                <span class="drink-name">Peroni Nastro Azzurro</span>
+                <span class="drink-price">3,50€</span>
+              </div>
+              <div class="drink-item" id="bebida-agua">
+                <span class="drink-name">Agua mineral 50cl</span>
+                <span class="drink-price">1,80€</span>
+              </div>
+              <div class="drink-item" id="bebida-naranja">
+                <span class="drink-name">San Pellegrino Arancia</span>
+                <span class="drink-price">2,80€</span>
+              </div>
+            </div>
+            <div class="drinks-col reveal delay-3">
+              <h3 class="drinks-subcategory">Digestivos</h3>
+              <div class="drink-item" id="bebida-limoncello">
+                <span class="drink-name">Limoncello di Sorrento</span>
+                <span class="drink-price">3,50€</span>
+              </div>
+              <div class="drink-item" id="bebida-amaro">
+                <span class="drink-name">Amaro Montenegro</span>
+                <span class="drink-price">3,50€</span>
+              </div>
+              <div class="drink-item" id="bebida-grappa">
+                <span class="drink-name">Grappa invecchiata</span>
+                <span class="drink-price">4,00€</span>
+              </div>
+              <div class="drink-item" id="bebida-cafe">
+                <span class="drink-name">Café espresso</span>
+                <span class="drink-price">1,50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Postres ── -->
+        <div class="menu-category" id="cat-postres">
+          <h2 class="menu-cat-title reveal">
+            <span class="label-caps">Dolci</span>
+            Postres artesanales
+          </h2>
+          <div class="menu-grid">
+
+            <article class="menu-card card reveal delay-1" data-category="postres" id="postre-tiramisu">
+              <div class="menu-card-img" style="aspect-ratio:3/2;">
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&q=75&auto=format&fit=crop" alt="Tiramisú artesanal" loading="lazy"/>
+                <span class="menu-tag">❤️ Imprescindible</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Tiramisú della Casa</h3>
+                  <span class="menu-price">6,50€</span>
+                </div>
+                <p class="menu-desc">Receta original con mascarpone, savoiardi, café espresso y cacao amargo. Casero.</p>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-2" data-category="postres" id="postre-panna-cotta">
+              <div class="menu-card-img" style="aspect-ratio:3/2;">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&q=75&auto=format&fit=crop" alt="Panna cotta" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Panna Cotta al Frutto</h3>
+                  <span class="menu-price">5,50€</span>
+                </div>
+                <p class="menu-desc">Nata fresca italiana, coulis de frutos rojos, menta fresca, ralladura de limón.</p>
+              </div>
+            </article>
+
+            <article class="menu-card card reveal delay-3" data-category="postres" id="postre-gelato">
+              <div class="menu-card-img" style="aspect-ratio:3/2;">
+                <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=500&q=75&auto=format&fit=crop" alt="Gelato artesanal" loading="lazy"/>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3 class="menu-name">Gelato Artigianale</h3>
+                  <span class="menu-price">4,50€</span>
+                </div>
+                <p class="menu-desc">Helado artesanal de temporada. Pregunta al camarero por los sabores del día.</p>
+                <div class="menu-tags-row">
+                  <span class="menu-allergen">🌱 Vegetariano</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Allergen note -->
+        <p class="allergen-note reveal">
+          ★ Disponible sin gluten bajo petición (+1,50€). Infórmenos de sus alergias e intolerancias.
+          Precios incluidos IVA. Carta sujeta a cambios de temporada.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" role="contentinfo"></footer>
+
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/footer.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/carta.js" defer></script>
+</body>
+</html>

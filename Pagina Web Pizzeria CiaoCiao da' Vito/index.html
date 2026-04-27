@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CiaoCiao da' Vito Pizzería — Masa madre fermentada 72 horas, horno de leña y los mejores ingredientes mediterráneos. Pizzería artesanal en Alicante." />
+  <meta name="keywords" content="pizzería, pizza artesanal, masa madre, Alicante, horno de leña, pizza napolitana" />
+  <meta property="og:title" content="CiaoCiao da' Vito Pizzería | Pizza Artesanal" />
+  <meta property="og:description" content="Masa madre fermentada 72 horas, horno de leña a 450°C y los mejores ingredientes mediterráneos." />
+  <meta property="og:type" content="website" />
+  <title>CiaoCiao da' Vito Pizzería | Pizza Artesanal · Alicante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Navbar (injected by navbar.js) -->
+  <header id="navbar" role="banner"></header>
+
+  <!-- ─── HERO ──────────────────────────────────────── -->
+  <section class="hero" id="hero" aria-label="Sección principal">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600&q=80&auto=format&fit=crop"
+        alt="Pizza artesanal recién salida del horno de leña"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="label-caps reveal delay-1">Desde 1998 · Pizzería artesanal</p>
+      <h1 class="display-title-hero hero-title reveal delay-2">
+        La pizza que te<br />
+        <em class="hero-title-em">atrapa</em> a primera<br />
+        mordida
+      </h1>
+      <p class="hero-desc reveal delay-3">
+        Masa madre fermentada 72 horas · Horno de leña a 450°C<br />
+        Ingredientes frescos del Mediterráneo
+      </p>
+      <div class="hero-ctas reveal delay-4">
+        <a href="carta.html" class="btn btn-primary hero-btn-main" id="btn-hero-carta">
+          Ver nuestra carta
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="reservas.html" class="btn btn-outline" id="btn-hero-reservar">Reservar mesa</a>
+      </div>
+      <div class="hero-badges reveal delay-5">
+        <div class="hero-badge">
+          <span class="hero-badge-num" data-target="25">0</span>
+          <span class="hero-badge-label">Años de tradición</span>
+        </div>
+        <div class="hero-badge-sep"></div>
+        <div class="hero-badge">
+          <span class="hero-badge-num" data-target="40">0</span>
+          <span class="hero-badge-label">Pizzas artesanales</span>
+        </div>
+        <div class="hero-badge-sep"></div>
+        <div class="hero-badge">
+          <span class="hero-badge-num" data-target="2">0</span>
+          <span class="hero-badge-label">Localizaciones</span>
+        </div>
+      </div>
+    </div>
+    <a href="#ticker" class="hero-scroll-hint" aria-label="Scroll hacia abajo">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ─── TICKER ────────────────────────────────────── -->
+  <div id="ticker" class="ticker-wrap"></div>
+
+  <!-- ─── SPECIALITIES ─────────────────────────────── -->
+  <section class="section specialities" id="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-caps reveal">Nuestras especialidades</span>
+        <h2 class="section-title reveal delay-1">Lo más pedido de la carta</h2>
+        <p class="section-subtitle reveal delay-2">Elaboradas a mano, horneadas en leña. Simples y perfectas.</p>
+      </div>
+      <div class="specialities-grid">
+        <div class="spec-card card reveal delay-1" id="spec-margherita">
+          <div class="spec-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=75&auto=format&fit=crop" alt="Pizza Margherita" loading="lazy" />
+            <span class="spec-badge">Más popular</span>
+          </div>
+          <div class="spec-body">
+            <span class="spec-label label-caps">Pizza</span>
+            <h3 class="spec-name">Margherita D.O.P.</h3>
+            <p class="spec-desc">Tomate San Marzano, mozzarella di bufala, albahaca fresca, AOVE.</p>
+            <div class="spec-footer">
+              <span class="spec-price">12,50€</span>
+              <a href="carta.html" class="btn btn-outline spec-btn">Ver carta</a>
+            </div>
+          </div>
+        </div>
+        <div class="spec-card card reveal delay-2" id="spec-diavola">
+          <div class="spec-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=75&auto=format&fit=crop" alt="Pizza Diavola" loading="lazy" />
+          </div>
+          <div class="spec-body">
+            <span class="spec-label label-caps">Pizza</span>
+            <h3 class="spec-name">Diavola Picante</h3>
+            <p class="spec-desc">Tomate, fiordilatte, salame piccante, aceitunas negras, guindilla.</p>
+            <div class="spec-footer">
+              <span class="spec-price">14,50€</span>
+              <a href="carta.html" class="btn btn-outline spec-btn">Ver carta</a>
+            </div>
+          </div>
+        </div>
+        <div class="spec-card card reveal delay-3" id="spec-trufa">
+          <div class="spec-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600&q=75&auto=format&fit=crop" alt="Pizza Trufa Negra" loading="lazy" />
+            <span class="spec-badge spec-badge-gold">Chef's pick</span>
+          </div>
+          <div class="spec-body">
+            <span class="spec-label label-caps">Pizza</span>
+            <h3 class="spec-name">Trufa Negra &amp; Porcini</h3>
+            <p class="spec-desc">Base blanca, mozzarella, setas porcini, trufa negra, parmesano 24 meses.</p>
+            <div class="spec-footer">
+              <span class="spec-price">18,00€</span>
+              <a href="carta.html" class="btn btn-outline spec-btn">Ver carta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <a href="carta.html" class="btn btn-primary" id="btn-spec-carta">Ver toda la carta &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HISTORIA / ABOUT ──────────────────────────── -->
+  <section class="section about-section" id="historia">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images reveal-left">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=75&auto=format&fit=crop" alt="Interior de la pizzería CiaoCiao da' Vito" loading="lazy" />
+          </div>
+          <div class="about-img-float glass-card">
+            <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=75&auto=format&fit=crop" alt="Pizzero artesano trabajando la masa" loading="lazy" />
+          </div>
+          <div class="about-year-badge glass-card">
+            <span class="about-year-num">1998</span>
+            <span class="about-year-label">Fundada</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="label-caps">Nuestra historia</span>
+          <div class="divider"></div>
+          <h2 class="section-title">Un pizzero,<br />una <em>obsesión</em><br />por la pizza.</h2>
+          <p class="about-text">
+            Todo comenzó en 1998 cuando Vito, un alicantino con alma italiana,
+            decidió aprender el arte de la pizza napolitana directamente en Nápoles.
+            Volvió con la receta, el horno y las ganas de compartirlo todo.
+          </p>
+          <p class="about-text">
+            Hoy, más de 25 años después, seguimos usando la misma masa madre que Vito preparó
+            aquel primer día. Fermentada 72 horas, horneada en leña durante 90 segundos.
+            Simple. Perfecto. Irreproducible.
+          </p>
+          <div class="about-values">
+            <div class="about-value">
+              <span class="about-value-icon">🔥</span>
+              <div>
+                <strong>Horno de leña</strong>
+                <span>450°C · 90 segundos</span>
+              </div>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🌿</span>
+              <div>
+                <strong>Ingredientes locales</strong>
+                <span>Mercados mediterráneos</span>
+              </div>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🤌</span>
+              <div>
+                <strong>Masa madre propia</strong>
+                <span>72 horas de fermentación</span>
+              </div>
+            </div>
+          </div>
+          <a href="nosotros.html" class="btn btn-outline" style="margin-top:32px;" id="btn-about-nosotros">Conoce al equipo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATS BAR ─────────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal delay-1">
+          <span class="stat-num" data-target="25">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item reveal delay-2">
+          <span class="stat-num" data-target="40">0</span>
+          <span class="stat-label">Pizzas en carta</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item reveal delay-3">
+          <span class="stat-num" data-target="50000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Pizzas horneadas</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item reveal delay-4">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── EXPERIENCIA / WHY US ──────────────────────── -->
+  <section class="section why-section" id="porque-nosotros">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-caps reveal">¿Por qué elegirnos?</span>
+        <h2 class="section-title reveal delay-1">Una experiencia más allá<br/>de la pizza</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card glass-card reveal delay-1" id="why-ambiente">
+          <div class="why-icon">🍷</div>
+          <h3>Ambiente único</h3>
+          <p>Un espacio íntimo, cálido y con personalidad. Perfecto para cenas en pareja o con amigos.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-2" id="why-vinos">
+          <div class="why-icon">🌾</div>
+          <h3>Masa de autor</h3>
+          <p>Nuestra masa madre lleva 25 años viva. Ingrediente secreto de cada pizza que sale del horno.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-3" id="why-servicio">
+          <div class="why-icon">⭐</div>
+          <h3>Servicio cercano</h3>
+          <p>Somos un equipo pequeño y apasionado. Te atendemos como si estuvieras en casa de unos amigos.</p>
+        </div>
+        <div class="why-card glass-card reveal delay-4" id="why-domicilio">
+          <div class="why-icon">🛵</div>
+          <h3>Reparto a domicilio</h3>
+          <p>Llevamos nuestra pizza hasta tu puerta. Pide en Glovo, UberEats o directamente desde aquí.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALERÍA ROW ───────────────────────────────── -->
+  <section class="gallery-row" id="galeria" aria-label="Galería de fotos">
+    <div class="gallery-row-track">
+      <div class="gallery-row-inner">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=70&auto=format&fit=crop" alt="Pizza napolitana" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=70&auto=format&fit=crop" alt="Pizzero en acción" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70&auto=format&fit=crop" alt="Interior pizzería" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=70&auto=format&fit=crop" alt="Pizza en la mesa" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&q=70&auto=format&fit=crop" alt="Ingredientes frescos" loading="lazy"/>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&q=70&auto=format&fit=crop" alt="Horno de leña" loading="lazy"/>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+        <div class="gallery-item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&q=70&auto=format&fit=crop" alt="" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA FINAL ─────────────────────────────────── -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box glass-card reveal">
+        <div class="cta-glow"></div>
+        <span class="label-caps">¿Listo para vivir la experiencia?</span>
+        <h2 class="section-title cta-title">Reserva tu mesa<br />esta noche</h2>
+        <p class="section-subtitle">Llámanos o reserva online. Sin esperas, sin sorpresas.</p>
+        <div class="cta-actions">
+          <a href="reservas.html" class="btn btn-primary cta-btn-main" id="btn-cta-reservar">Reservar ahora</a>
+          <a href="pedidos.html" class="btn btn-outline" id="btn-cta-pedidos">Pedir a domicilio</a>
+          <a href="tel:+34965123456" class="btn btn-gold" id="btn-cta-telefono">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.56 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            965 12 34 56
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by footer.js) -->
+  <footer id="footer" role="contentinfo"></footer>
+
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/footer.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

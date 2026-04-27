@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pide tu pizza CiaoCiao da' Vito a domicilio a través de Glovo, UberEats o recoge en local. Entrega en 30-45 minutos." />
+  <title>Pedir a Domicilio | CiaoCiao da' Vito Pizzería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header id="navbar" role="banner"></header>
+  <div id="ticker" class="ticker-wrap"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <span class="label-caps">Tu pizza en casa</span>
+        <h1 class="display-title">Pide a <em style="font-style:italic;color:var(--color-accent);">domicilio</em></h1>
+        <p>Lista en 30–45 minutos · Packaging eco · Caliente garantizado</p>
+      </div>
+    </div>
+
+    <section class="section pedidos-section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="label-caps reveal">¿Cómo quieres tu pizza?</span>
+          <h2 class="section-title reveal delay-1">Elige tu método de pedido</h2>
+        </div>
+
+        <div class="pedidos-grid">
+
+          <!-- Glovo -->
+          <div class="pedido-card glass-card reveal delay-1" id="pedido-glovo">
+            <div class="pedido-platform-logo pedido-logo-glovo">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#00A082"/>
+                <text x="24" y="30" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">G</text>
+              </svg>
+            </div>
+            <h3>Glovo</h3>
+            <p>Entrega ultrarrápida a domicilio. Disponible en Alicante centro y barrios cercanos.</p>
+            <div class="pedido-meta">
+              <span class="pedido-meta-item">⏱ 25–40 min</span>
+              <span class="pedido-meta-item">🚴 Express</span>
+            </div>
+            <a href="https://glovoapp.com" target="_blank" rel="noopener" class="btn btn-primary pedido-btn" id="btn-glovo-alicante">
+              Pedir en Glovo — Alicante
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+            <a href="https://glovoapp.com" target="_blank" rel="noopener" class="btn btn-outline pedido-btn-sec" id="btn-glovo-playa">
+              Pedir en Glovo — Playa S. Juan
+            </a>
+          </div>
+
+          <!-- UberEats -->
+          <div class="pedido-card glass-card reveal delay-2" id="pedido-ubereats">
+            <div class="pedido-platform-logo pedido-logo-uber">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="12" fill="#000"/>
+                <text x="24" y="31" text-anchor="middle" fill="white" font-size="15" font-weight="bold" font-family="Arial">UE</text>
+              </svg>
+            </div>
+            <h3>Uber Eats</h3>
+            <p>Seguimiento en tiempo real de tu pedido. Zona de reparto amplia en toda el área metropolitan.</p>
+            <div class="pedido-meta">
+              <span class="pedido-meta-item">⏱ 30–45 min</span>
+              <span class="pedido-meta-item">📍 Rastreo GPS</span>
+            </div>
+            <a href="https://ubereats.com" target="_blank" rel="noopener" class="btn btn-primary pedido-btn" id="btn-ubereats-alicante">
+              Pedir en Uber Eats — Alicante
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+            <a href="https://ubereats.com" target="_blank" rel="noopener" class="btn btn-outline pedido-btn-sec" id="btn-ubereats-playa">
+              Pedir en Uber Eats — Playa
+            </a>
+          </div>
+
+          <!-- Recogida en local -->
+          <div class="pedido-card glass-card reveal delay-3" id="pedido-recogida">
+            <div class="pedido-platform-logo pedido-logo-takeaway">
+              <div style="font-size:2.8rem;">🍕</div>
+            </div>
+            <h3>Recogida en local</h3>
+            <p>Haz tu pedido por teléfono y recógelo listo en el local. Sin colas ni esperas. Y sin coste de envío.</p>
+            <div class="pedido-meta">
+              <span class="pedido-meta-item">⏱ 15–20 min</span>
+              <span class="pedido-meta-item">💰 Sin recargo</span>
+              <span class="pedido-meta-item">📦 Caliente garantizado</span>
+            </div>
+            <a href="tel:+34965123456" class="btn btn-gold pedido-btn" id="btn-takeaway-alicante">
+              📞 Alicante Centro — 965 12 34 56
+            </a>
+            <a href="tel:+34968007007" class="btn btn-outline pedido-btn-sec" id="btn-takeaway-playa">
+              📞 Playa San Juan — 968 00 70 07
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Zone info -->
+        <div class="zona-reparto reveal" style="margin-top:64px;">
+          <div class="glass-card zona-card">
+            <div class="zona-icon">🗺️</div>
+            <div class="zona-content">
+              <h3>Zona de reparto</h3>
+              <p>Repartimos en Alicante capital, El Campello, Playa San Juan, San Juan de Alicante y Mutxamel. ¿Fuera de zona? Llámanos y lo intentamos.</p>
+            </div>
+            <div class="zona-zones">
+              <span class="zona-pill">Alicante</span>
+              <span class="zona-pill">El Campello</span>
+              <span class="zona-pill">Playa San Juan</span>
+              <span class="zona-pill">San Juan</span>
+              <span class="zona-pill">Mutxamel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packaging section -->
+        <div class="packaging-section reveal" style="margin-top:64px;">
+          <div class="section-header" style="margin-bottom:40px;">
+            <span class="label-caps">Nos importa el planeta</span>
+            <h2 class="section-title">Packaging 100% ecológico</h2>
+            <p class="section-subtitle">Cajas de cartón reciclado, bolsas reutilizables y cero plástico de un solo uso.</p>
+          </div>
+          <div class="packaging-grid">
+            <div class="packaging-item glass-card reveal delay-1">
+              <span class="packaging-icon">♻️</span>
+              <strong>Cajas recicladas</strong>
+              <p>Cartón FSC certificado, 100% reciclable</p>
+            </div>
+            <div class="packaging-item glass-card reveal delay-2">
+              <span class="packaging-icon">🌿</span>
+              <strong>Sin plástico</strong>
+              <p>Cero plástico de un solo uso en nuestros pedidos</p>
+            </div>
+            <div class="packaging-item glass-card reveal delay-3">
+              <span class="packaging-icon">🔥</span>
+              <strong>Termo-aislante</strong>
+              <p>Mantiene la temperatura hasta 40 minutos</p>
+            </div>
+            <div class="packaging-item glass-card reveal delay-4">
+              <span class="packaging-icon">🛵</span>
+              <strong>Reparto eléctrico</strong>
+              <p>Nuestra flota interna es 100% eléctrica</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" role="contentinfo"></footer>
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/footer.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
