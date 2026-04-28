@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy Mamy — Smash Burgers en Madrid</title>
+  <meta name="description" content="Las mejores smash burgers de Madrid. Ingredientes frescos, carne de calidad y sabor sin límites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════ NAVBAR ══════════════════════ -->
+<header id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Yummy <span>Mamy</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu">
+        <li><a href="index.html"    class="nav-link">Inicio</a></li>
+        <li><a href="carta.html"    class="nav-link">Carta</a></li>
+        <li><a href="historia.html" class="nav-link">Historia</a></li>
+        <li><a href="takeaway.html" class="nav-link">Take Away</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Pedir Ahora</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=80&fit=crop');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-label">Madrid · Smash Burgers · Desde 2019</span>
+    <h1 class="hero-title">BURGERS<br><span class="highlight">SIN</span><br>LÍMITES</h1>
+    <p class="hero-subtitle">Carne fresca aplastada a fuego vivo, queso que derrite y sabores que no piden perdón.</p>
+    <div class="hero-actions">
+      <a href="carta.html"    class="btn btn-primary">Ver la Carta</a>
+      <a href="takeaway.html" class="btn btn-outline">Pedir Take Away</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ HALL OF FAME ══════════════════════ -->
+<section class="hall-of-fame" id="hall-of-fame">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Nuestras Creaciones</span>
+      <h2 class="section-title">HALL OF <span class="red">FAME</span></h2>
+      <p class="section-subtitle">Las burgers que han conquistado Madrid. Cada una con su propia historia.</p>
+    </div>
+    <div class="burger-grid">
+      <div class="burger-card fade-in fade-in-delay-1">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80&fit=crop" alt="La Campeona" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA CAMPEONA</h3>
+          <p class="burger-card-desc">Triple ternera, triple cheddar, bacon crujiente y huevo frito. No apta para mentes débiles.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">16,00€</span>
+            <span class="burger-badge">Best Seller</span>
+          </div>
+        </div>
+      </div>
+      <div class="burger-card fade-in fade-in-delay-2">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80&fit=crop" alt="La Infernal" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA INFERNAL</h3>
+          <p class="burger-card-desc">Doble ternera, bacon, jalapeños encurtidos, queso picante y sriracha casera.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">13,50€</span>
+            <span class="burger-badge"><i class="fa-solid fa-fire"></i> Picante</span>
+          </div>
+        </div>
+      </div>
+      <div class="burger-card fade-in fade-in-delay-3">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80&fit=crop" alt="La Trufada" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA TRUFADA</h3>
+          <p class="burger-card-desc">Wagyu, queso brie, cebolla caramelizada, mayonesa de trufa negra. Alta burgernomía.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">18,00€</span>
+            <span class="burger-badge gold">Premium</span>
+          </div>
+        </div>
+      </div>
+      <div class="burger-card fade-in fade-in-delay-4">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&q=80&fit=crop" alt="La Clásica" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA CLÁSICA</h3>
+          <p class="burger-card-desc">Ternera, cheddar, lechuga, tomate, pepinillo y nuestra salsa especial de la casa.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">10,50€</span>
+          </div>
+        </div>
+      </div>
+      <div class="burger-card fade-in fade-in-delay-1">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80&fit=crop" alt="La Mushroom" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA MUSHROOM</h3>
+          <p class="burger-card-desc">Ternera, champiñones salteados con mantequilla, queso gruyere fundido y cebolla roja.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">12,50€</span>
+          </div>
+        </div>
+      </div>
+      <div class="burger-card fade-in fade-in-delay-2">
+        <div class="burger-card-img-wrap">
+          <img class="burger-card-img" src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80&fit=crop" alt="La Vegana" loading="lazy">
+        </div>
+        <div class="burger-card-body">
+          <h3 class="burger-card-name">LA VEGANA</h3>
+          <p class="burger-card-desc">Hamburguesa de garbanzos y espinacas, aguacate fresco, tomate y alioli vegano.</p>
+          <div class="burger-card-footer">
+            <span class="burger-price">11,50€</span>
+            <span class="burger-badge green">Vegana</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="carta.html" class="btn btn-outline">Ver Carta Completa &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ LAS MÁS PEDIDAS ══════════════════════ -->
+<section class="mas-pedidas">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Ranking semanal</span>
+      <h2 class="section-title">LAS MÁS <span class="gold">PEDIDAS</span></h2>
+    </div>
+    <div class="mas-pedidas-list">
+      <div class="pedida-item fade-in fade-in-delay-1">
+        <span class="pedida-num">01</span>
+        <div class="pedida-info">
+          <h3>La Campeona</h3>
+          <p>Triple ternera · triple cheddar · bacon · huevo</p>
+          <span class="pedida-price">16,00€</span>
+        </div>
+      </div>
+      <div class="pedida-item fade-in fade-in-delay-2">
+        <span class="pedida-num">02</span>
+        <div class="pedida-info">
+          <h3>La Infernal</h3>
+          <p>Doble ternera · jalapeños · sriracha casera</p>
+          <span class="pedida-price">13,50€</span>
+        </div>
+      </div>
+      <div class="pedida-item fade-in fade-in-delay-3">
+        <span class="pedida-num">03</span>
+        <div class="pedida-info">
+          <h3>La Trufada</h3>
+          <p>Wagyu · brie · cebolla caramelizada · trufa</p>
+          <span class="pedida-price">18,00€</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ HISTORIA PREVIEW ══════════════════════ -->
+<section class="historia-preview">
+  <div class="container">
+    <div class="historia-split">
+      <div class="historia-img-wrap fade-in">
+        <img class="historia-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80&fit=crop" alt="Interior Yummy Mamy" loading="lazy">
+      </div>
+      <div class="historia-text fade-in fade-in-delay-2">
+        <div class="section-header">
+          <span class="section-label">Quiénes somos</span>
+          <h2 class="section-title">PASIÓN EN <span class="red">CADA</span><br>BURGER</h2>
+        </div>
+        <p>Todo empezó en 2019 cuando dos amigos con demasiada pasión por la buena carne y las noches largas, decidieron abrir un pequeño local en el barrio de Malasaña.</p>
+        <p>Hoy, después de cientos de miles de smashes, seguimos fieles a la misma filosofía: <strong>ingredientes de calidad, técnica de smash y cero compromisos</strong>.</p>
+        <a href="historia.html" class="btn btn-primary" style="margin-top:1.5rem;">Nuestra Historia &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CTA BANNER ══════════════════════ -->
+<div class="cta-banner">
+  <div class="container">
+    <span class="section-label">¿Ya tienes hambre?</span>
+    <h2 class="section-title">HAZ TU PEDIDO<br>AHORA</h2>
+    <p class="section-subtitle">Recógelo tú o disfrútalo aquí con los tuyos. Como prefieras.</p>
+    <a href="takeaway.html" class="btn btn-outline">Pedir Take Away &rarr;</a>
+  </div>
+</div>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Yummy <span class="red">Mamy</span></div>
+      <p class="footer-desc">Smash burgers con alma. Hechos con amor, ingredientes frescos y la presión justa para crear la burger perfecta.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="social-btn" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Páginas</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="takeaway.html">Take Away</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Carta</h4>
+      <ul class="footer-links">
+        <li><a href="carta.html">Burgers Clásicas</a></li>
+        <li><a href="carta.html">Burgers Especiales</a></li>
+        <li><a href="carta.html">Vegetarianas</a></li>
+        <li><a href="carta.html">Combos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contacto</h4>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="footer-contact-text">Calle Mayor 24<br>Madrid 28013</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="footer-contact-text">+34 910 234 567</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-clock"></i></span>
+        <span class="footer-contact-text">Lun–Vie: 13:00–23:00<br>Sáb–Dom: 12:00–00:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="copyright-year">2024</span> <span>Yummy Mamy</span>. Todos los derechos reservados.</p>
+    <p class="footer-copy">Hecho con <i class="fa-solid fa-heart" style="color:var(--red);"></i> y mucho queso</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

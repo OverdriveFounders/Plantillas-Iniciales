@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Yummy Mamy</title>
+  <meta name="description" content="Contáctanos, reserva tu mesa o haznos llegar cualquier duda. Estamos en Madrid, Malasaña.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Yummy <span>Mamy</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu">
+        <li><a href="index.html"    class="nav-link">Inicio</a></li>
+        <li><a href="carta.html"    class="nav-link">Carta</a></li>
+        <li><a href="historia.html" class="nav-link">Historia</a></li>
+        <li><a href="takeaway.html" class="nav-link">Take Away</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Pedir Ahora</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <span class="page-hero-label">Hablemos</span>
+  <h1 class="page-hero-title">CONTACTA<br><span class="red">CON NOSOTROS</span></h1>
+  <p class="page-hero-sub">Reservas, preguntas, sugerencias o simplemente saludarnos. Estamos aquí.</p>
+</div>
+
+<section style="background:var(--bg); padding:5rem 2rem;">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- INFO -->
+      <div>
+        <div class="contact-info-stack fade-in">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <p class="contact-card-label">Dirección</p>
+              <p class="contact-card-value">Calle Mayor 24, Local 2<br>28013 Madrid · Malasaña</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <p class="contact-card-label">Teléfono</p>
+              <p class="contact-card-value">
+                <a href="tel:+34910234567" style="color:var(--white); transition:color var(--t);" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--white)'">+34 910 234 567</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">
+                <a href="mailto:hola@yummymamy.es" style="color:var(--white); transition:color var(--t);" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--white)'">hola@yummymamy.es</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <p class="contact-card-label">WhatsApp</p>
+              <p class="contact-card-value">
+                <a href="https://wa.me/34910234567" target="_blank" rel="noopener" style="color:var(--white); transition:color var(--t);" onmouseover="this.style.color='#25d366'" onmouseout="this.style.color='var(--white)'">+34 910 234 567</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horarios -->
+        <div class="fade-in">
+          <h3 style="font-family:var(--font-h); font-size:1.2rem; letter-spacing:0.1em; color:var(--white); margin-bottom:1rem; text-transform:uppercase;"><i class="fa-solid fa-clock" style="color:var(--red); margin-right:0.5rem;"></i>Horario de apertura</h3>
+          <div class="schedule-grid">
+            <div class="schedule-item" data-day="lunes">
+              <span class="schedule-day">Lunes</span>
+              <span class="schedule-time">13:00 – 23:00</span>
+            </div>
+            <div class="schedule-item" data-day="martes">
+              <span class="schedule-day">Martes</span>
+              <span class="schedule-time">13:00 – 23:00</span>
+            </div>
+            <div class="schedule-item" data-day="miercoles">
+              <span class="schedule-day">Miércoles</span>
+              <span class="schedule-time">13:00 – 23:00</span>
+            </div>
+            <div class="schedule-item" data-day="jueves">
+              <span class="schedule-day">Jueves</span>
+              <span class="schedule-time">13:00 – 23:30</span>
+            </div>
+            <div class="schedule-item" data-day="viernes">
+              <span class="schedule-day">Viernes</span>
+              <span class="schedule-time">13:00 – 00:00</span>
+            </div>
+            <div class="schedule-item" data-day="sabado">
+              <span class="schedule-day">Sábado</span>
+              <span class="schedule-time">12:00 – 00:30</span>
+            </div>
+            <div class="schedule-item" data-day="domingo">
+              <span class="schedule-day">Domingo</span>
+              <span class="schedule-time">12:00 – 22:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="map-placeholder fade-in">
+          <span class="map-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+          <p>Calle Mayor 24, Madrid 28013</p>
+          <a href="https://maps.google.com/?q=Calle+Mayor+24+Madrid" target="_blank" rel="noopener">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver en Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form fade-in fade-in-delay-2">
+        <h2 class="form-title">ESCRÍBENOS</h2>
+        <p class="form-title-sub">Respondemos en menos de 24 horas. Prometido.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="apellido">Apellido</label>
+              <input class="form-input" type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="telefono">Teléfono (opcional)</label>
+            <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="asunto">Asunto</label>
+            <select class="form-select" id="asunto" name="asunto" required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="reserva">Reserva de mesa</option>
+              <option value="evento">Eventos y grupos</option>
+              <option value="pedido">Consulta sobre pedido</option>
+              <option value="alergia">Alergias / intolerancias</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte…" required></textarea>
+          </div>
+          <div class="form-group" style="display:flex; align-items:flex-start; gap:0.75rem;">
+            <input type="checkbox" id="privacidad" name="privacidad" required
+              style="width:18px; height:18px; accent-color:var(--red); margin-top:2px; flex-shrink:0; cursor:pointer;">
+            <label for="privacidad" style="font-size:0.8rem; color:var(--gray); cursor:pointer; line-height:1.5;">
+              He leído y acepto la <a href="#" style="color:var(--red);">política de privacidad</a>.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1.1rem;">
+            <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REDES -->
+<section style="background:var(--bg-2); padding:5rem 2rem; border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Síguenos</span>
+      <h2 class="section-title">ÚNETE A LA <span class="gold">FAMILIA</span></h2>
+      <p class="section-subtitle">Fotos, novedades, sorteos y mucho contenido jugoso.</p>
+    </div>
+    <div style="display:flex; gap:1.25rem; justify-content:center; flex-wrap:wrap;" class="fade-in">
+      <a href="#" style="display:flex; align-items:center; gap:0.75rem; padding:1rem 1.75rem; background:var(--bg-3); border:1px solid var(--border); border-radius:var(--r-lg); font-weight:600; font-size:0.9rem; color:var(--white); transition:all var(--t);"
+         onmouseover="this.style.borderColor='var(--red)'; this.style.transform='translateY(-3px)'"
+         onmouseout="this.style.borderColor='var(--border)'; this.style.transform='translateY(0)'">
+        <i class="fa-brands fa-instagram" style="font-size:1.1rem;"></i> Instagram
+      </a>
+      <a href="#" style="display:flex; align-items:center; gap:0.75rem; padding:1rem 1.75rem; background:var(--bg-3); border:1px solid var(--border); border-radius:var(--r-lg); font-weight:600; font-size:0.9rem; color:var(--white); transition:all var(--t);"
+         onmouseover="this.style.borderColor='var(--red)'; this.style.transform='translateY(-3px)'"
+         onmouseout="this.style.borderColor='var(--border)'; this.style.transform='translateY(0)'">
+        <i class="fa-brands fa-tiktok" style="font-size:1.1rem;"></i> TikTok
+      </a>
+      <a href="#" style="display:flex; align-items:center; gap:0.75rem; padding:1rem 1.75rem; background:var(--bg-3); border:1px solid var(--border); border-radius:var(--r-lg); font-weight:600; font-size:0.9rem; color:var(--white); transition:all var(--t);"
+         onmouseover="this.style.borderColor='var(--red)'; this.style.transform='translateY(-3px)'"
+         onmouseout="this.style.borderColor='var(--border)'; this.style.transform='translateY(0)'">
+        <i class="fa-brands fa-facebook-f" style="font-size:1.1rem;"></i> Facebook
+      </a>
+      <a href="https://wa.me/34910234567" target="_blank" rel="noopener"
+         style="display:flex; align-items:center; gap:0.75rem; padding:1rem 1.75rem; background:var(--bg-3); border:1px solid var(--border); border-radius:var(--r-lg); font-weight:600; font-size:0.9rem; color:var(--white); transition:all var(--t);"
+         onmouseover="this.style.borderColor='#25d366'; this.style.transform='translateY(-3px)'"
+         onmouseout="this.style.borderColor='var(--border)'; this.style.transform='translateY(0)'">
+        <i class="fa-brands fa-whatsapp" style="font-size:1.1rem;"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Yummy <span class="red">Mamy</span></div>
+      <p class="footer-desc">Smash burgers con alma. Hechos con amor, ingredientes frescos y la presión justa para crear la burger perfecta.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="social-btn" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Páginas</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="takeaway.html">Take Away</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Carta</h4>
+      <ul class="footer-links">
+        <li><a href="carta.html">Burgers Clásicas</a></li>
+        <li><a href="carta.html">Burgers Especiales</a></li>
+        <li><a href="carta.html">Vegetarianas</a></li>
+        <li><a href="carta.html">Combos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contacto</h4>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="footer-contact-text">Calle Mayor 24<br>Madrid 28013</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="footer-contact-text">+34 910 234 567</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-clock"></i></span>
+        <span class="footer-contact-text">Lun–Vie: 13:00–23:00<br>Sáb–Dom: 12:00–00:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="copyright-year">2024</span> <span>Yummy Mamy</span>. Todos los derechos reservados.</p>
+    <p class="footer-copy">Hecho con <i class="fa-solid fa-heart" style="color:var(--red);"></i> y mucho queso</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const nombre    = document.getElementById('nombre').value.trim();
+    const email     = document.getElementById('email').value.trim();
+    const asunto    = document.getElementById('asunto').value;
+    const mensaje   = document.getElementById('mensaje').value.trim();
+    const privacidad = document.getElementById('privacidad').checked;
+    if (!nombre || !email || !asunto || !mensaje) { showToast('Por favor completa todos los campos obligatorios.'); return; }
+    if (!privacidad) { showToast('Debes aceptar la política de privacidad.'); return; }
+    const btn = form.querySelector('button[type="submit"]');
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando…';
+    btn.disabled = true;
+    setTimeout(() => {
+      form.innerHTML = `
+        <div style="text-align:center; padding:3rem 1rem;">
+          <i class="fa-solid fa-circle-check" style="font-size:3.5rem; color:var(--gold); margin-bottom:1.25rem; display:block;"></i>
+          <h3 style="font-family:var(--font-h); font-size:2rem; color:var(--white); margin-bottom:0.5rem; letter-spacing:0.03em;">MENSAJE ENVIADO</h3>
+          <p style="color:var(--gray); font-size:0.95rem; line-height:1.7;">Gracias, ${nombre}. Te respondemos en menos de 24 horas.</p>
+          <a href="index.html" class="btn btn-primary" style="margin-top:2rem; display:inline-flex;">Volver al inicio</a>
+        </div>`;
+    }, 900);
+  });
+</script>
+</body>
+</html>

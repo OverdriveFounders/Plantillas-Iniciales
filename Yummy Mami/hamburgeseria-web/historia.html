@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia — Yummy Mamy</title>
+  <meta name="description" content="La historia de Yummy Mamy: dos amigos, una pasión y las mejores smash burgers de Madrid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .timeline { position: relative; padding: 2rem 0; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--border);
+      transform: translateX(-50%);
+    }
+    .tl-item {
+      display: grid;
+      grid-template-columns: 1fr 60px 1fr;
+      margin-bottom: 3rem;
+      align-items: center;
+    }
+    .tl-item:nth-child(odd)  .tl-content { grid-column: 1; text-align: right; padding-right: 2.5rem; }
+    .tl-item:nth-child(odd)  .tl-empty   { grid-column: 3; }
+    .tl-item:nth-child(even) .tl-content { grid-column: 3; text-align: left; padding-left: 2.5rem; }
+    .tl-item:nth-child(even) .tl-empty   { grid-column: 1; }
+    .tl-dot {
+      grid-column: 2;
+      width: 48px; height: 48px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white);
+      font-size: 1rem;
+      border: 3px solid var(--bg-2);
+      z-index: 1;
+      margin: 0 auto;
+    }
+    .tl-year  { font-family: var(--font-h); font-size: 2rem; color: var(--red); margin-bottom: 0.3rem; }
+    .tl-title { font-family: var(--font-h); font-size: 1.3rem; color: var(--white); margin-bottom: 0.4rem; }
+    .tl-desc  { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+    @media (max-width: 768px) {
+      .timeline::before { left: 24px; }
+      .tl-item { grid-template-columns: 48px 1fr; }
+      .tl-item:nth-child(odd)  .tl-content,
+      .tl-item:nth-child(even) .tl-content { grid-column: 2; text-align: left; padding-left: 1.5rem; padding-right: 0; }
+      .tl-dot { grid-column: 1; margin: 0; }
+      .tl-empty { display: none; }
+    }
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    @media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } }
+    .team-card {
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+    .team-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(0,0,0,0.3); }
+    .team-img-wrap { overflow: hidden; height: 320px; }
+    .team-img {
+      width: 100%; height: 320px;
+      object-fit: cover; object-position: center top;
+      filter: brightness(0.85) grayscale(0.2);
+      transition: filter 0.4s ease, transform 0.5s ease;
+    }
+    .team-card:hover .team-img { filter: brightness(1) grayscale(0); transform: scale(1.04); }
+    .team-body { padding: 1.5rem; }
+    .team-name { font-family: var(--font-h); font-size: 1.8rem; letter-spacing: 0.03em; color: var(--white); margin-bottom: 0.2rem; }
+    .team-role { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
+    .team-bio  { font-size: 0.88rem; color: var(--gray); line-height: 1.65; }
+  </style>
+</head>
+<body>
+
+<header id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Yummy <span>Mamy</span></a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu">
+        <li><a href="index.html"    class="nav-link">Inicio</a></li>
+        <li><a href="carta.html"    class="nav-link">Carta</a></li>
+        <li><a href="historia.html" class="nav-link">Historia</a></li>
+        <li><a href="takeaway.html" class="nav-link">Take Away</a></li>
+        <li><a href="contacto.html" class="nav-link nav-cta">Pedir Ahora</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <span class="page-hero-label">Yummy Mamy · Madrid</span>
+  <h1 class="page-hero-title">NUESTRA <span class="gold">HISTORIA</span></h1>
+  <p class="page-hero-sub">Dos amigos, una cocina pequeña y una obsesión compartida por la burger perfecta.</p>
+</div>
+
+<!-- INTRO -->
+<section class="historia-page-content">
+  <div class="container">
+    <div class="historia-intro fade-in">
+      <div>
+        <h2 class="historia-big-text">Todo empezó con una <span class="highlight">apuesta</span> y una plancha caliente</h2>
+        <p class="historia-para">Corría el invierno de 2019. Dos amigos llevaban meses discutiendo sobre qué hacía falta en Madrid: una hamburguesa honesta, sin artificios, hecha con las manos y el corazón.</p>
+        <p class="historia-para">Firmaron el contrato de un local de 40 metros cuadrados en Malasaña un martes por la tarde. El sábado siguiente ya tenían la plancha encendida. Así somos nosotros.</p>
+        <p class="historia-para">La primera semana vendimos 87 burgers. La segunda, 210. A los tres meses, había cola en la puerta todos los viernes.</p>
+      </div>
+      <div style="overflow:hidden; border-radius:var(--r-lg);">
+        <img class="historia-full-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80&fit=crop" alt="La cocina de Yummy Mamy" loading="lazy">
+      </div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-item fade-in fade-in-delay-1">
+        <span class="stat-num">+500K</span>
+        <span class="stat-label">Burgers servidas</span>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-2">
+        <span class="stat-num">5</span>
+        <span class="stat-label">Años de historia</span>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-3">
+        <span class="stat-num">4.9<i class="fa-solid fa-star" style="font-size:3rem;vertical-align:middle;margin-left:0.2rem;"></i></span>
+        <span class="stat-label">Valoración media</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section style="background:var(--bg-2); padding:6rem 2rem;">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Los creadores</span>
+      <h2 class="section-title">DETRÁS DE LA <span class="red">PLANCHA</span></h2>
+      <p class="section-subtitle">Dos personas. Un sueño. Cero medias tintas.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-img-wrap">
+          <img class="team-img" src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80&fit=crop" alt="Fundador - Maestro de la plancha" loading="lazy">
+        </div>
+        <div class="team-body">
+          <h3 class="team-name">DAVO</h3>
+          <p class="team-role">Co-fundador · Maestro de la plancha</p>
+          <p class="team-bio">Cocinero autodidacta. Obsesionado con la temperatura y el punto exacto del smash. Él cuida cada gramo de ternera que entra en la cocina.</p>
+        </div>
+      </div>
+      <div class="team-card fade-in fade-in-delay-2">
+        <div class="team-img-wrap">
+          <img class="team-img" src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&q=80&fit=crop" alt="Fundador - El cerebro de los sabores" loading="lazy">
+        </div>
+        <div class="team-body">
+          <h3 class="team-name">ADAM</h3>
+          <p class="team-role">Co-fundador · El cerebro de los sabores</p>
+          <p class="team-bio">Viajó por Estados Unidos, Japón y Europa buscando la hamburguesa perfecta. Volvió con ideas, salsas y técnicas que nadie más usaba en Madrid.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section style="background:var(--bg); padding:6rem 2rem;">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Lo que nos mueve</span>
+      <h2 class="section-title">NUESTROS <span class="gold">VALORES</span></h2>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-card fade-in fade-in-delay-1">
+        <span class="valor-icon"><i class="fa-solid fa-drumstick-bite"></i></span>
+        <h3 class="valor-title">CALIDAD SIN TRAMPA</h3>
+        <p class="valor-desc">Solo carne fresca. Nunca congelada. Seleccionamos proveedores locales y revisamos la calidad cada mañana antes de abrir.</p>
+      </div>
+      <div class="valor-card fade-in fade-in-delay-2">
+        <span class="valor-icon"><i class="fa-solid fa-fire"></i></span>
+        <h3 class="valor-title">TÉCNICA SMASH</h3>
+        <p class="valor-desc">La presión crea caramelización. La caramelización crea sabor. Solo plancha caliente y el momento preciso.</p>
+      </div>
+      <div class="valor-card fade-in fade-in-delay-3">
+        <span class="valor-icon"><i class="fa-solid fa-handshake"></i></span>
+        <h3 class="valor-title">HONESTIDAD TOTAL</h3>
+        <p class="valor-desc">Lo que ves en la carta es lo que recibes. Sin fotos de catálogo ni ingredientes misteriosos. Transparencia en cada burger.</p>
+      </div>
+      <div class="valor-card fade-in fade-in-delay-4">
+        <span class="valor-icon"><i class="fa-solid fa-leaf"></i></span>
+        <h3 class="valor-title">PRODUCTO LOCAL</h3>
+        <p class="valor-desc">Trabajamos con agricultores y ganaderos de la Comunidad de Madrid siempre que es posible. El km 0 no es moda, es responsabilidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section style="background:var(--bg-2); padding:6rem 2rem; border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">El camino</span>
+      <h2 class="section-title">CINCO AÑOS <span class="red">DE FUEGO</span></h2>
+    </div>
+    <div class="timeline fade-in">
+      <div class="tl-item">
+        <div class="tl-content">
+          <div class="tl-year">2019</div>
+          <div class="tl-title">El Primer Local</div>
+          <p class="tl-desc">Abrimos en Malasaña con 40m², una plancha, dos personas y muchas ganas. Cola desde el primer día.</p>
+        </div>
+        <div class="tl-dot"><i class="fa-solid fa-star"></i></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><i class="fa-solid fa-truck"></i></div>
+        <div class="tl-content">
+          <div class="tl-year">2020</div>
+          <div class="tl-title">Delivery & Resistencia</div>
+          <p class="tl-desc">El mundo paró. Nosotros no. Lanzamos delivery propio y mantuvimos el equipo al completo.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-content">
+          <div class="tl-year">2021</div>
+          <div class="tl-title">Premio Mejor Burger Madrid</div>
+          <p class="tl-desc">La Campeona ganó el concurso de mejor hamburguesa de la Comunidad de Madrid. Un hito.</p>
+        </div>
+        <div class="tl-dot"><i class="fa-solid fa-trophy"></i></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="tl-content">
+          <div class="tl-year">2022</div>
+          <div class="tl-title">Ampliación del Local</div>
+          <p class="tl-desc">Ampliamos a 120m² y renovamos la cocina con dos planchas nuevas. Capacidad para 60 comensales.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-content">
+          <div class="tl-year">2024</div>
+          <div class="tl-title">500.000 Burgers</div>
+          <p class="tl-desc">Alcanzamos el medio millón de burgers servidas. Lo celebramos como siempre: con la plancha encendida.</p>
+        </div>
+        <div class="tl-dot"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <div class="tl-empty"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="container">
+    <span class="section-label">Ya sabes quiénes somos</span>
+    <h2 class="section-title">AHORA VEN A<br>PROBARNOS</h2>
+    <p class="section-subtitle">Las palabras se las lleva el viento. Las burgers, no.</p>
+    <a href="carta.html" class="btn btn-outline" style="margin-top:2rem;">Ver la Carta &rarr;</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Yummy <span class="red">Mamy</span></div>
+      <p class="footer-desc">Smash burgers con alma. Hechos con amor, ingredientes frescos y la presión justa para crear la burger perfecta.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="social-btn" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Páginas</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="takeaway.html">Take Away</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Carta</h4>
+      <ul class="footer-links">
+        <li><a href="carta.html">Burgers Clásicas</a></li>
+        <li><a href="carta.html">Burgers Especiales</a></li>
+        <li><a href="carta.html">Vegetarianas</a></li>
+        <li><a href="carta.html">Combos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contacto</h4>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="footer-contact-text">Calle Mayor 24<br>Madrid 28013</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+        <span class="footer-contact-text">+34 910 234 567</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-icon"><i class="fa-solid fa-clock"></i></span>
+        <span class="footer-contact-text">Lun–Vie: 13:00–23:00<br>Sáb–Dom: 12:00–00:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="copyright-year">2024</span> <span>Yummy Mamy</span>. Todos los derechos reservados.</p>
+    <p class="footer-copy">Hecho con <i class="fa-solid fa-heart" style="color:var(--red);"></i> y mucho queso</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
